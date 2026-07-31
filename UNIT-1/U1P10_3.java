@@ -1,27 +1,24 @@
-/* WRITE A JAVA PROGRAM OF 1D ARRAY. */
-
-import java.util.Scanner;
+/* WRITE A JAVA PROGRAM OF 1D ARRAY AND ASSIGN VALUES MANUALLY. */
 
 class U1P10_3
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
+        int marks[] = new int[5];
 
-        int scores[] = new int[5];
         int i;
 
-        for(i = 0; i < 5; i++)
-        {
-            System.out.print("ENTER SCORE : ");
-            scores[i] = sc.nextInt();
-        }
+        marks[0] = 90;
+        marks[1] = 70;
+        marks[2] = 80;
+        marks[3] = 95;
+        marks[4] = 85;
 
-        System.out.println("\nARRAY ELEMENTS ARE:");
+        System.out.println("MANUALLY ASSIGNED ARRAY ELEMENTS:");
 
-        for(i = 0; i < 5; i++)
+        for(i = 0; i < marks.length; i++)
         {
-            System.out.println(scores[i]);
+            System.out.println(marks[i]);
         }
     }
 }

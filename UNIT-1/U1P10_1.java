@@ -1,18 +1,28 @@
-/* WRITE A JAVA PROGRAM OF 1D ARRAY. */
+/* WRITE A JAVA PROGRAM OF 1D ARRAY AND TAKE VALUES FROM USER. */
+
+import java.util.Scanner;
 
 class U1P10_1
 {
     public static void main(String args[])
     {
-        int scores[] = {10, 20, 30, 40, 50};
+        Scanner sc = new Scanner(System.in);
 
+        int marks[] = new int[5];
         int i;
 
-        System.out.println("ARRAY ELEMENTS ARE:");
+        System.out.println("ENTER MARKS OF 5 STUDENTS:");
 
-        for(i = 0; i < 5; i++)
+        for(i = 0; i < marks.length; i++)
         {
-            System.out.println(scores[i]);
+            marks[i] = sc.nextInt();
+        }
+
+        System.out.println("MARKS OF 5 STUDENTS:");
+
+        for(i = 0; i < marks.length; i++)
+        {
+            System.out.println(marks[i]);
         }
     }
 }

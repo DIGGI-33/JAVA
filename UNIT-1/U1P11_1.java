@@ -1,20 +1,31 @@
-/* WRITE A JAVA PROGRAM OF 2D ARRAY. */
+/* WRITE A JAVA PROGRAM FOR 2D ARRAY. */
 
 class U1P11_1
 {
     public static void main(String args[])
     {
-        int a[][] = {{10,20},{30,40}};
+        int arr[][] = new int[3][3];
 
-        int i, j;
+        arr[0][0] = 10;
+        arr[0][1] = 20;
+        arr[0][2] = 30;
 
-        for(i = 0; i < 2; i++)
+        arr[1][0] = 40;
+        arr[1][1] = 50;
+        arr[1][2] = 60;
+
+        arr[2][0] = 70;
+        arr[2][1] = 80;
+        arr[2][2] = 90;
+
+        System.out.println("2D Array Elements:");
+
+        for(int i = 0; i < 3; i++)
         {
-            for(j = 0; j < 2; j++)
+            for(int j = 0; j < 3; j++)
             {
-                System.out.print(a[i][j] + " ");
+                System.out.print(arr[i][j] + " ");
             }
-
             System.out.println();
         }
     }
